@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-![1](F:\rodyyyy.github.io\images\1.jpg)
-
 ## Education
 
 * bachelor's degree from **Xidian University**.
