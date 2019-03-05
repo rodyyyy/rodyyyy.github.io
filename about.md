@@ -29,19 +29,19 @@ permalink: /about/
 ## Achievements
 
 
-* [** first achievement**](#) 
+* [**first achievement**](#) 
 
    英俊
 
 ***
 
-* [** second achievement**](#) 
+* [**second achievement**](#) 
 
     潇洒
 
 ***
 
-* [** third achievement**](#) 
+* [**third achievement**](#) 
 
    自由
 
