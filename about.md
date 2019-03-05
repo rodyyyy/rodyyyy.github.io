@@ -47,4 +47,4 @@ permalink: /about/
 
 ## Contact me
 
-[rodyyyy@qq.com **& **Religiouszhx@gmail.com **&** sa182252@mail.ustc.edu.cn](mailto:agarwal.akshay.akshay8@gmail.com)
+[**rodyyyy@qq.com  &  Religiouszhx@gmail.com  &  sa182252@mail.ustc.edu.cn**](mailto:agarwal.akshay.akshay8@gmail.com)
