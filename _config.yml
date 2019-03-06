@@ -4,12 +4,12 @@ url: "http://laobubu.github.io"    # the protocol and hostname of your site, eg.
 baseurl: "/" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 #timezone: Asia/Chongqing
 description: >
-  One or more sentences introducing this blog.
+  One or more sentences introducing  this blog.
 
 # Your information
 email: your_email@example.com
 author: your_name
-avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+avatar: "‪F:\rodyyyy.github.io\images\1.jpg"
 profile: One sentence introducing yourself.
 #twitter_username: twitter_username
 #github_username:  github_username
