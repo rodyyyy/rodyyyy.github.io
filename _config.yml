@@ -1,21 +1,22 @@
 # Site settings
-title: Another Blog
+title: 风中清焰
 url: "http://laobubu.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 baseurl: "/" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 #timezone: Asia/Chongqing
 description: >
   One or more sentences introducing  this blog.
+  improve yourself 1% every single day,you will be 38 times better one year later!
 
 # Your information
-email: your_email@example.com
-author: your_name
-avatar: "https://www.google.com/imgres?imgurl=http%3A%2F%2Fi2.17173cdn.com%2F2fhnvk%2FYWxqaGBf%2Fcms3%2FoStBtEbklvhzBwa.jpg&imgrefurl=http%3A%2F%2Flol.17173.com%2Fnews%2F02172016%2F103538820.shtml&docid=Ey3odT7YxlwC3M&tbnid=jSACw3IJuiRGzM%3A&vet=10ahUKEwjV__Cs8ezgAhWO9Z4KHSNSAicQMwhEKAUwBQ..i&w=615&h=359&bih=568&biw=1242&q=%E7%9B%96%E4%BC%A6&ved=0ahUKEwjV__Cs8ezgAhWO9Z4KHSNSAicQMwhEKAUwBQ&iact=mrc&uact=8"
-profile: One sentence introducing yourself.
+email: rodyyyy@qq.com
+author: rody
+avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+profile: 不知者无畏
 #twitter_username: twitter_username
 #github_username:  github_username
 profile_links:
-  Email: "mailto:your_email@example.com"
-  GitHub: "https://github.com/laobubu/jekyll-theme-EasyBook"
+  Email: "rodyyyy@qq.com"
+  GitHub: "https://rodyyyy.github.io/"
   # You can add more profile links above, or edit _includes/sidebar.html 
 
 # Comment Service (Disqus or 多说)
@@ -29,7 +30,7 @@ header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
     About: /about/
     Category: /category/
-    Donate: https://laobubu.net/donate.html
+    Donate: https://www.zhibo8.cc/
 
 permalink: /archivers/:title
 plugins:
