@@ -30,7 +30,7 @@ header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
     About: /about/
     Category: /category/
-    Donate: https://www.zhibo8.cc/
+    Donate: https://github.com/rodyyyy
 
 permalink: /archivers/:title
 plugins:
