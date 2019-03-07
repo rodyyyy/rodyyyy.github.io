@@ -1,7 +1,7 @@
 ---
-layout:post
+layout: post
 author：Chris Rody
-title:Eclipse使用心得
+title: Eclipse使用心得
 ---
 
 Eclipse一些使用经验的记录
