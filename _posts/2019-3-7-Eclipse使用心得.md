@@ -1,6 +1,6 @@
 ---
 layout: post
-author： Chris Rody
+author: Chris Rody
 title: Eclipse使用心得
 ---
 
