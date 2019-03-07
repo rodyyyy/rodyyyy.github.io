@@ -1,12 +1,10 @@
 ---
-layout:post
-author:Chris Rody
-Title:SpringLearning
+layout: post
+author: Chris Rody
+title: SpringLearning
 ---
 
 spring学习的进阶之路
-
-
 
 ## spring学习之路
 
