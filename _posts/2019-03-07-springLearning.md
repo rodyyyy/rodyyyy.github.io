@@ -31,7 +31,39 @@ spring学习的进阶之路
 >
 > 6,降低Java EE API的使用难度
 
+##### 3，IOC和DI
 
+* 控制反转，将对象的创建权反转给了Spring   
+   * DI：依赖注入，前提必须有IOC的环境，Spring管理这个类的时候将类的依赖的属性注入（设置）进来
 
+     * 依赖
 
+       ``` java
+       Class A{  
+           }
+       Class B{
+           public void xxx(A a){      
+           } 
+       }
+       ```
 
+     * 继承：is a
+
+       ```java
+       Class A{
+       }
+       Class B extends A{
+       }
+       
+       ```
+
+      * 聚合：has a
+
+##### 4，SpEL
+
+* SpEL:**Spring Expression Language**，Spring的表达式语言
+  * 语法：#{SpEL}	
+
+例子如下：
+
+![SpEL](https://github.com/rodyyyy/rodyyyy.github.io/raw/master/images/SpEL.png
