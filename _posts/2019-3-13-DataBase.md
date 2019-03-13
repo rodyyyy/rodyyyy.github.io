@@ -18,7 +18,7 @@ public class JdbcTest {
 		try {
 	 Class.forName(Driver);//1,加载驱动
 	 Connection con=DriverManager.getConnection(Url, UserName, UserPassword);
-	 //2,创建连接
+	 //2,通过驱动管理类创建数据库链接
 	 String sql="select * from user where id=10";//3,设置sql语句
 	 Statement statement=con.createStatement();//4,创建statement
 	 //5，设置参数（这里暂时没有）
@@ -45,7 +45,7 @@ public class JdbcTest {
 ```
 
 >Driver="com.mysql.cj.jdbc.Driver";   //新的MySQL驱动包，Driver类变化
->Url="jdbc:mysql://localhost:3306/travelsys?serverTimezone=GMT%2B8"
+>Url="jdbc:mysql://localhost:3306/mybatis?serverTimezone=GMT%2B8"
 >UserName="root"
 >UserPassword="rody123"
 
