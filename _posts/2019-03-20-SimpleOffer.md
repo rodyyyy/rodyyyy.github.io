@@ -470,3 +470,17 @@ public ListNode ReverseList(ListNode head) {
 
 [参考出处](<https://blog.csdn.net/dawn_after_dark/article/details/80765535>)
 
+> `另外一个简单的理解`
+>
+> 思路：
+> 链表的反转 等价于反转链表的指针，只要把原链表中的指针反转，便是链表的反转
+> 比如 原链表中 head指向head.next，先把head.next保存起来（不然改变head的指向后，原链表会断开，找不到下一个节点），然后改变head指向result（新建节点），再用result表示新链表的表头
+> 1>2>3>4
+>
+> 1(result) 2>3>4
+>
+> 1<2(result) 3>4
+>
+> 1<2<3(result) 4
+>
+> 1<2<3<4(result) 
