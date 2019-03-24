@@ -6,7 +6,7 @@ author: Chris Rody
 
 算法记录
 
-##  算法老去
+##  算法SE
 
 ### 1,二维数组的行和列
 
@@ -302,5 +302,88 @@ public class StackTest {
 元素11111出栈
 
 堆栈是空的，没有元素   */
+```
+
+### 3，一个数二进制中1的个数
+
+* 两种方法
+
+```java
+//>>>代表逻辑右移，int占4个字节共32位，因此移位32次
+public int 1NumberOf1(int n) {
+		int count = 0;
+        for(int i = 0; i < 32; i++){
+            if((n >>> i & 1) == 1)
+                ++count;
+        }
+        return count;
+    }
+//二进制数循环减一，并与自身相与，记录直到n为0相减的次数即为1的个数
+public int 2NumberOf1(int n) {
+        int count = 0;
+        if(n == 0)
+            return count;
+		while(n != 0){
+         	++count;
+            n = (n-1) & n;
+        }
+        return count;
+    }
+```
+
+### 4，数组中奇偶数的处理
+
+>  输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
+
+```java
+ public void reOrderArray(int [] array) {
+         int j = 0;//定位需要确定位
+	        for(int i = 0;i<array.length;i++){
+	            if(array[i]%2==1){
+	            	//如果是奇数的话
+	            	if(i!=j){
+	            		int temp = array[i];
+	            		int k = i;
+	            		for(k = i;k>j;k--){
+	            			array[k]=array[k-1];//遇到一个奇数，依次将其移动到偶数前面
+	            		}
+	            		array[k]=temp;//把奇数的值填入
+	            		
+	            	}
+	            	
+						j++;
+					
+	            }
+	        }
+    }
+```
+
+### 5，输出链表节点
+
+> 输入一个链表，输出该链表中倒数第k个结点
+>
+> `思路`
+>
+> 代码思路如下：两个指针，先让第一个指针和第二个指针都指向头结点，然后再让第一个指正走(k-1)步，到达第k个节点。然后两个指针同时往后移动，当第一个结点到达末尾的时候，第二个结点所在位置就是倒数第k个节点了  
+
+```java
+public ListNode FindKthToTail(ListNode head,int k) {
+        if(head==null||k<=0){
+            return null;
+        }
+        ListNode pre=head;
+        ListNode last=head;
+        for(int i=1;i<k;i++){//例如倒数第二个，pre和last索引相差1
+            if(pre.next!=null){
+                pre=pre.next;
+            }
+            else {return null;}
+        }
+        while(pre.next!=null){
+            pre=pre.next;
+            last=last.next;
+        }
+        return last;
+    }
 ```
 
