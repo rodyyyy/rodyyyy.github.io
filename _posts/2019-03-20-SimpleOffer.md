@@ -387,3 +387,85 @@ public ListNode FindKthToTail(ListNode head,int k) {
     }
 ```
 
+### 6,反向链表
+
+> 输入一个链表，反转链表后，输出新链表的表头
+>
+> `思路1`
+>
+> 链表的反转 等价于反转链表的指针，只要把原链表中的指针反转，便是链表的反转
+
+```java
+public ListNode ReverseList(ListNode head) {
+        //pre始终指向已反序的最后一个节点
+        ListNode pre = null;
+        //middle始终指向正在考察节点
+        ListNode middle = head;
+        //after始终指向待反序的第一个节点，也就是middle之后
+        ListNode after = null;
+        while(middle != null) {
+            //更新after
+            after = middle.next;
+            //对考察的节点进行反序
+            middle.next = pre;
+            //更新pre
+            pre = middle;
+            //后移middle, 换下一个待考察节点
+            middle = after;
+        }
+        //因为pre始终指向已反序的最后的一个节点
+        return pre;
+    }
+/*
+当middle指针指向的节点不为空时，我们需要用after来保存它下一个节点，防止链表断开后，无法继续后移。middle的next指向pre实现反序，然后middle和pre同时后移一步即可，此时middle指向下一个待考察的节点，直到middle指向空为止，说明链表已完成反序操作。
+*/
+
+```
+
+> `思路2`
+>
+> 还是上面的想法，只不过我们这次充分利用head来代替middle作用，我们赋予head新的语义，使其始终指向已完成反序的最后一个节点
+
+```java
+    /**
+     * 充分利用head指针和外加2个辅助指针
+     
+     */
+    public static ListNode ReverseList2(ListNode head) {
+        ListNode pre = null;
+        ListNode after = null;
+        while(head != null) {
+            after = head.next;
+            head.next = pre;
+            pre = head;
+            head = after;
+        }
+        return pre;
+    }
+
+```
+
+> `思路2`
+>
+> 我们使其先走到链表的末尾，确保每次回溯时都返回最后一个节点的指针。同时从倒数第二个结点开始反序。
+> head.next.next = head; 是指使当前节点的下一个节点指向自己
+> head.next = null; 断开与下一个节点的联系，完成真正的反序操作
+
+```java
+    /**
+     * 牛逼的递归实现
+     */
+    public static ListNode ReverseList3(ListNode head) {
+        if(head == null || head.next == null) {
+            return head;
+        }
+        ListNode reverseHead = ReverseList3(head.next);
+        head.next.next = head;
+        head.next = null;
+        return reverseHead;
+    }
+
+```
+
+[参考出处](<https://blog.csdn.net/dawn_after_dark/article/details/80765535>)
+
