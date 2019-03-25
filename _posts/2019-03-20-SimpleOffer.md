@@ -484,3 +484,60 @@ public ListNode ReverseList(ListNode head) {
 > 1<2<3(result) 4
 >
 > 1<2<3<4(result) 
+
+### 7,斐波那契数列
+
+##### 1，数列
+
+> 斐波那契数列（Fibonacci sequence），又称黄金分割数列、因数学家列昂纳多·斐波那契（Leonardoda Fibonacci）以兔子繁殖为例子而引入，故又称为“[兔子数列](https://baike.baidu.com/item/%E5%85%94%E5%AD%90%E6%95%B0%E5%88%97/6849441)”，指的是这样一个数列：1、1、2、3、5、8、13、21、34、……在数学上，斐波纳契数列以如下被以递推的方法定义：
+>
+> F(1)=1,F(2)=1, 
+>
+> F(n)=F(n-1)+F(n-2)（n>=3，n∈N*）
+
+##### 2，一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法
+
+![地址格式](https://github.com/rodyyyy/rodyyyy.github.io/raw/master/images/g5.png)
+
+```java
+ //自己的简单解法
+ public int JumpFloor(int target) {
+        if(target==1){
+            return 1;
+        }
+         if(target==2){
+            return 2;
+        }
+        while(target>2){
+            return JumpFloor(target-1)+JumpFloor(target-2);
+        }return 0;
+    }
+```
+
+##### 3，延伸
+
+> 一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法
+>
+> 思路：斐波那契的延伸，n为1,2,3时对应的跳法为1,2,4，当n>3时，跳数等于前n-1中情况的所有跳数之和
+
+![地址格式](https://github.com/rodyyyy/rodyyyy.github.io/raw/master/images/g6.png)
+
+```java
+public int JumpFloorII(int target) {
+        int count=0;
+        while(target>0){
+              switch(target){
+            case 1:return 1;
+            case 2:return 2;
+            case 3:return 4;
+            default :{
+                for(int n=target-1;n>0;n--){
+                    count+=JumpFloorII(n);
+                }return count+1;
+            }
+        }
+        }
+        return 0;
+    }
+```
+
