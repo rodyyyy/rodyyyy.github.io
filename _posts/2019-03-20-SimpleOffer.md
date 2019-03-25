@@ -497,7 +497,7 @@ public ListNode ReverseList(ListNode head) {
 
 ##### 2，一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法
 
-![地址格式](https://github.com/rodyyyy/rodyyyy.github.io/raw/master/images/x20.png)
+![01patch](https://github.com/rodyyyy/rodyyyy.github.io/raw/master/images/x20.png)
 
 ```java
  //自己的简单解法
@@ -520,7 +520,7 @@ public ListNode ReverseList(ListNode head) {
 >
 > 思路：斐波那契的延伸，n为1,2,3时对应的跳法为1,2,4，当n>3时，跳数等于前n-1中情况的所有跳数之和
 
-![地址格式](https://github.com/rodyyyy/rodyyyy.github.io/raw/master/images/x21.png)
+![01patch](https://github.com/rodyyyy/rodyyyy.github.io/raw/master/images/x21.png)
 
 ```java
 public int JumpFloorII(int target) {
