@@ -520,7 +520,7 @@ public ListNode ReverseList(ListNode head) {
 >
 > 思路：斐波那契的延伸，n为1,2,3时对应的跳法为1,2,4，当n>3时，跳数等于前n-1中情况的所有跳数之和
 
-![地址格式](https://github.com/rodyyyy/rodyyyy.github.io/raw/master/images/g6.jpg)
+![地址格式](https://github.com/rodyyyy/rodyyyy.github.io/raw/master/images/g6.png)
 
 ```java
 public int JumpFloorII(int target) {
