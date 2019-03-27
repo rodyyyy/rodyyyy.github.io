@@ -541,7 +541,7 @@ public int JumpFloorII(int target) {
     }
 ```
 
-### 8，合并链表
+### 8,合并链表
 
 > 输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。
 
@@ -657,11 +657,39 @@ public class Solution {
  public int Add(int num1,int num2) {
          
         while(num2!=0){
-           int bitXor=num1^num2;
-           int bitAnd=num1&num2;
+           int bitXor=num1^num2;//异或就相当于不进位的和：1+1=0；
+           int bitAnd=num1&num2;//相与就相当于标记出进位
             num1=bitXor;
             num2=bitAnd<<1;
         }return num1;
+    }
+```
+
+### 10,字符串格式数字输出
+
+> 将一个字符串转换成一个整数(实现Integer.valueOf(string)的功能，但是string不符合数字要求时返回0)，要求不能使用字符串转换整数的库函数
+
+```java
+ public int StrToInt(String str) {
+        int flag=0;
+        if(str.length()==0)
+            return 0;
+        else if(str.charAt(0)=='+'){
+            flag=1;
+        }
+        if(str.charAt(0)=='-'){
+            flag=2;
+        }
+        int start=flag>0?1:0;
+        long res=0;//这里用double也不行，只能用同时整形的long
+       while(start<str.length()){
+           if(str.charAt(start)<'0'||str.charAt(start)>'9'){
+               return 0;
+           }
+           res=res*10+(str.charAt(start)-'0');
+           start++;
+       }
+        return flag>1?-(int)res:(int)res;//没有+，-或者直接没有符号的情况
     }
 ```
 
