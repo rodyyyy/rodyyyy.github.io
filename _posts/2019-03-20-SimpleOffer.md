@@ -17,7 +17,7 @@ int [][] array
 //length是数组的一种属性，不用加（）
 ```
 
-### 2,ArrayList总结
+### 2.0,ArrayList总结
 
 > ArrayList：动态数组类，ArrayList对象既有数组的特征，也有链表的特征；可以随时从中添加或者删除元素，ArrayList实现了接口类，可以动态改变大小
 >
@@ -184,6 +184,139 @@ for(Integer number : arrayList){
  //Integer[] integer2 = new Integer[arrayList.size()];
  //integer2 = arrayList.toArray();
 ```
+
+### 2.1,vector数组
+
+> Vector 可实现自动增长的对象数组
+> java.util.vector提供了**向量类(vector)**以实现类似动态数组的功能。事实上，灵活使用数组也可以完成向量类的功能，但向量类中提供大量的方法大大方便了用户的使用。 
+> ​        创建了一个向量类的对象后，可以往其中随意插入不同类的对象，即不需顾及类型也不需预先选定向量的容量，并可以方便地进行查找。对于预先不知或者不愿预先定义数组大小，并且需要频繁地进行查找，插入，删除工作的情况。可以考虑使用向量类。 
+
+`插入功能`
+
+> (1)adddElement(Object obj) 
+> 将obj插入向量的尾部，**obj可以是任何类型的对象**。对同一个向量对象，亦可以在其中插入不同类的对象。但插入的应是对象而不是数值，所以插入数值时要注意将数组转换成相应的对象。 
+>
+> ```java
+> //例如：要插入整数1时，不要直接调用v1.addElement(1),正确的方法为： 
+> Vector v1 = new Vector(); 
+> Integer integer1 = new Integer(1); 
+> v1.addElement(integer1); 
+> ```
+>
+> (2)setElementAt(Object obj,int index) 
+> 将index处的对象设置成obj，原来的对象将被覆盖。 
+> (3)insertElement(Object obj,int index) 
+
+`删除功能`
+
+> (1)removeElement(Object obj) 
+> 从向量中**删除obj**,若有多个存在，则从向量头开始试，删除找到的第一个与obj相同的向量成员。 
+> (2)removeAllElement(); 
+> 删除向量所有的对象 
+> (3)public fianl synchronized void removeElementAt(int index) 
+
+`查询搜索功能`
+
+> (1)indexOf(Object obj) 
+> 从向量头开始搜索obj,返回所遇到的第一个obj对应的下标，若不存在此obj,返回-1. 
+> (2)indexOf(Object obj,int index) 
+> 从index所表示的下标处开始搜索obj. 
+> (3)lastindexOf(Object obj) 
+> 从向量尾部开始逆向搜索obj. 
+> (4)lastIndex(Object obj,int index) 
+> 从index所表示的下标处由尾至头逆向搜索obj. 
+> (5)firstElement() 
+> 获取向量对象中的首个obj 
+> (6)lastElement() 
+> 获取向量对象中的最末obj
+
+`例子`
+
+```java
+import java.util.Vector; 
+import java.lang.*; 
+import java.util.Enumeration; 
+public class VectorApp 
+{ 
+     public static void main(String args[]) 
+     { 
+          Vector v1 = new Vector(); 
+          Integer integer1= new Integer(1); 
+          //加入为字符串对象 
+          v1.addElement("one"); 
+          //加入的为integer的对象 
+          v1.addElement(integer1); 
+          v1.addElement(integer1); 
+          v1.addElement("two"); 
+          v1.addElement(new Integer(2)); 
+          v1.addElement(integer1); 
+          v1.addElement(integer1); 
+          //转为字符串并打印 
+            System.out.println("The Vector v1 is:\n\t"+v1); 
+          //向指定位置插入新对象 
+          v1.insertElement("three",2); 
+          v1.insertElement(new Float(3.9),3); 
+          System.out.println("The Vector v1(used method 
+          insertElementAt()is:\n\t)"+v1); 
+          //将指定位置的对象设置为新的对象 
+            //指定位置后的对象依次往后顺延 
+            v1.setElementAt("four",2); 
+           System.out.println("The vector v1 cused method setElmentAt()is:\n\t"+v1); 
+           v1.removeElement(integer1); 
+           //从向量对象v1中删除对象integer1 
+           //由于存在多个integer1,所以从头开始。 
+             //找删除找到的第一个integer1. 
+           Enumeration enum = v1.elements(); 
+           System.out.println("The vector v1 (used method removeElememt()is"+v1); 
+            while(enum.hasMoreElements()) 
+            System.out.println(enum.nextElement()+""); 
+            System.out.println(); //隔行
+            //使用枚举类(Enumeration)的方法取得向量对象的每个元素。 
+              System.out.println("The position of Object1(top-to-botton):"+v1.indexOf(integer1)); 
+            System.out.println("The position of Object1(tottom-to-top):"+v1.lastIndexOf(integer1)); 
+            //按不同的方向查找对象integer1所处的位置 
+              v1.setSize(4); 
+            System.out.println("The new Vector(resized the vector)is:"+v1); 
+            //重新设置v1的大小，多余的元素被抛弃    
+     } 
+} 
+```
+
+`结果`
+
+```
+The vector v1 is:
+[one,1,1,two,2,1,1] 
+The vector v1(used method insetElementAt()) is: 
+[one,1,three,3.9,1,two,2,1,1] 
+The vector v1(used method setElementAt()) is: 
+[one,1,four,3.9,1,two,2,1,1] 
+The vector v1(useed method removeElement()) is: 
+[one,four,3.9,1,two,2,1,1] 
+The position of object1(top-to-botton):3 
+The position of object1(botton-to-top):7 
+The new Vector(resized the vector) is: 
+[one,four,3.9,1] 
+```
+
+[此处参考博文](https://blog.csdn.net/listening_music/article/details/7034070 )
+
+`补充`
+
+> (1)类vector定义了方法 size(); 
+> 此方法用于获取向量元素的个数。它们返回值是向量中实际存在的元素个数，而非向量容量。可以调用方法capacity()来获取容量值
+>
+> setsize(int newsize); 
+> 此方法用来定义向量的大小，若向量对象现有成员个数已经超过了newsize的值，则超过部分的多余元素会丢失。 
+> (2)程序中定义Enumeration类的一个对象Enumeration是java.util中的一个接口类， 
+> 在Enumeration中封装了有关枚举数据集合的方法。 
+> hasMoreElement()来判断集合中是否还有其他元素和方法
+> nextElement()来判断集合中是否还有其他元素
+> nextElement()来获取下一个元素,利用这两个方法，可以依次获得集合中的元素。 
+> Vector中提供方法： 
+> public final synchronized Enumeration elements(); 
+
+
 
 ### 3,栈的操作
 
@@ -695,9 +828,13 @@ public class Solution {
 
 ### 11，二叉树
 
-##### 1，输入两棵二叉树A，B，判断B是不是A的子结构
+##### 1，树之间的子结构关系
 
+> 题目：输入两棵二叉树A，B，判断B是不是A的子结构
+>
 > ps：我们约定空树不是任意一个树的子结构
+>
+> 思路：判断根的值是否相等，若等则进行俩结构的匹配，若相同就是子结构；若不同则用root1的左子树、右子树跟root2进行递归查询；注意在进行操作之前的if判断的几种类型
 
 ```java
 /**
@@ -764,5 +901,121 @@ public class Solution {
 }
 ```
 
-##### 2，
+##### 2，树的镜像
 
+> 题目：操作给定的二叉树，将其变换为源二叉树的镜像
+>
+> 思路：若树左右都为空，则不用进行镜像操作；若树直接为空，也不用操作`这两种情况都是直接return`；
+>
+> 否则：需要先进行左右子树的直接交换，然后再对其左右进行递归Mirror操作
+
+```java
+  public void Mirror(TreeNode root) {
+        if(root==null)return;
+        if(root.left==null&&root.right==null)return;
+        if(root.left!=null||root.right!=null){
+           TreeNode dev=null;
+            dev=root.left;
+            root.left=root.right;
+            root.right=dev;
+            Mirror(root.left);
+            Mirror(root.right);
+        }
+    }
+```
+
+##### 3，
+
+### 12,二维数组
+
+##### 1，顺时针打印二维数组成员
+
+> 输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字
+
+```java
+public class Solution {
+    public ArrayList<Integer> printMatrix(int [][] matrix) {
+     if(matrix.length==0||matrix==null){
+           return null;
+       }
+        ArrayList<Integer> list=new ArrayList<Integer>();
+        int row=matrix.length;//行数
+        int col=matrix[0].length;//列数
+        int start=0;
+        while(row>start*2&&col>start*2){//循环可以持续的条件
+            int Xmax=row-1-start;
+            int Ymax=col-1-start;
+           
+            for(int i=start;i<=Ymax;i++){
+                list.add(matrix[start][i]);//从左到右
+            }
+            if(start<Xmax){
+                for(int j=start+1;j<=Xmax;j++){//从右上到右下
+                list.add(matrix[j][Ymax]);
+              }
+            }
+            if(start<Ymax&&start<Xmax){
+                 for(int k=Ymax-1;k>=start;k--){//右下到左下
+                list.add(matrix[Xmax][k]);
+              }
+            }
+            if(start<Ymax&&start<Xmax-1){
+              for(int n=Xmax-1;n>start;n--){//左下到左上
+                list.add(matrix[n][start]);
+              }  
+            }
+            start++;
+        }return list;
+    }
+```
+
+### 13，栈
+
+##### 1，求栈所含最小元素
+
+>定义栈的数据结构，请在该类型中实现一个能够得到栈中所含最小元素的min函数（时间复杂度应为O(1)）
+
+```java
+
+    Stack<Integer> data=new Stack<Integer>();
+    Stack<Integer> mins=new Stack<Integer>();
+    Integer tmpMin=null;//用temMin来存储临时最小值
+//数据入栈，并与最小值判断大小    
+public void push(int node) {
+        if(tmpMin == null) {
+            tmpMin = node;
+            data.push(node);
+            mins.push(node);
+        } else {
+            if(node <= tmpMin) {
+                tmpMin = node;
+                mins.push(node);
+            }
+            data.push(node);
+        }
+    }
+    //弹出栈顶元素
+    public void pop() {
+           int po= data.pop();
+           int min=mins.pop();
+            if(po!=min){
+                 mins.push(min);
+            }
+    }
+    //查看栈顶元素
+    public int top() {
+        int to=data.pop();
+        data.push(to);
+        return to;
+    }
+    //查找栈中最小元素
+    public int min() {
+        int mi=mins.pop();
+        mins.push(mi);
+        return mi;
+    }
+```
+
+##### 2，出栈顺序
+
+> 说明当栈不为空且栈顶数据和当前pop序列中的数据不相等时循环结束
