@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 集合和数组的区别
+title: Collection和Arrays的部分方法
 author: Chris Rody
 ---
 
