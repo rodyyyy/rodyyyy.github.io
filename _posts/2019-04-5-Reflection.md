@@ -30,3 +30,10 @@ Class<?> cls=Class.forName(act[0]);
                 }
 ```
 
+> Class类封装一个对象和接口运行时的状态，当装载类时，Class类型的对象自动创建
+>
+> Class.forName：返回与给定的字符串名称相关联类或接口的Class对象。
+>
+> Class.forName是一个静态方法，同样可以用来加载类。该方法有两种形式：
+>
+> Class.forName(String name, boolean initialize, ClassLoader loader)和 Class.forName(String className)。第一种形式的参数 name表示的是类的全名；initialize表示是否初始化类；loader表示加载时使用的类加载器。第二种形式则相当于设置了参数 initialize的值为 true，loader的值为当前类的类加载器。
