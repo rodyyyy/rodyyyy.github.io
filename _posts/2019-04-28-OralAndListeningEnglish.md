@@ -4,6 +4,8 @@ title: EnglishPath
 author: Chris Rody
 ---
 
+英语进阶
+
 ### 一，发音细节
 
 #### 1，do ， you ，know
@@ -36,4 +38,3 @@ tone:[təʊn]
 nine times of ten //十有八九
 ```
 
-i
