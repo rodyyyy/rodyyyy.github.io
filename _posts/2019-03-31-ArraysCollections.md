@@ -283,6 +283,14 @@ Arrays.sort(strs);
 System.out.println(Arrays.toString(strs));//[abcdeag, abcdefg, abcdehg]
 ```
 
+2.1 Arrays.sort()使用两种方式（Comparable和Comparator接口）对对象或者引用进行排序
+
+[参考1](<https://blog.csdn.net/tongyuehong137/article/details/45318567>)
+
+[参考2](<http://www.manongjc.com/article/31775.html>)
+
+compare中，左减去右是升序，右减去左边为升序
+
 ##### 2，查找 : `binarySearch()`
 
 ```java
