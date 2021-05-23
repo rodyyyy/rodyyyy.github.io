@@ -97,3 +97,23 @@ bathroom 卫生间
 philosopher 哲学家
 
 above all 首先
+
+have your attention 请注意
+
+people in need 需要帮助
+
+Dubai 迪拜
+
+workshop 车间
+
+someday 终有一天
+
+dream up a good life 想象美好生活
+
+i was born ready 生来就准备好了
+
+lay in my bed 躺在床上
+
+lie 躺 lay是过去式 lain 过去分词 lying现在分词
+
+average bear 一般的熊
