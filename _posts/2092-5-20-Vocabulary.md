@@ -117,3 +117,10 @@ lay in my bed 躺在床上
 lie 躺 lay是过去式 lain 过去分词 lying现在分词
 
 average bear 一般的熊
+
+- 2021-5-23
+
+fellas 伙计们，小伙子们
+
+either step down or fight 要么继续要么放弃吧
+
