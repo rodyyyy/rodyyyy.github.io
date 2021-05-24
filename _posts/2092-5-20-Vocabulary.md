@@ -139,3 +139,21 @@ condense 收缩压缩 condensed milk 炼乳
 liver 肝脏
 
 bunch of monsters 一群怪兽
+
+freak 怪物
+
+did you get what i send you for? 你拿到了我寄给你的东西了么？
+
+come in third 拿了第三名
+
+airways 航空公司
+
+pilot 飞行员
+
+Mayday是国际通用的无线电通话遇难求救讯号， 发出Mayday时必须连续呼叫三次
+
+（“Mayday，Mayday，Mayday”）
+
+breathe in  吸进
+
+breathe out 呼出
