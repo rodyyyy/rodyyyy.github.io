@@ -4,14 +4,13 @@ url: "http://laobubu.github.io"    # the protocol and hostname of your site, eg.
 baseurl: "/" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 #timezone: Asia/Chongqing
 description: 须知少年凌云志，曾许人间第一流
-  One or more sentences introducing  this blog.
-  improve yourself 1% every single day,you will be 38 times better one year later!
+
 
 # Your information
 email: rodyyyy@qq.com
-author: rody
+author: Rodyyyy
 avatar: "/images/avatar.jpg"
-profile: 不知者无畏
+profile: 临环宇而小天下
 #twitter_username: twitter_username
 #github_username:  github_username
 profile_links:
