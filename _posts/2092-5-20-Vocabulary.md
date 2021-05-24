@@ -124,3 +124,18 @@ fellas 伙计们，小伙子们
 
 either step down or fight 要么继续要么放弃吧
 
+transporter 搬运工
+
+permanently 永久的
+
+hide out 躲藏
+
+nonverbal signal 非语言信号
+
+jail 监狱
+
+condense 收缩压缩 condensed milk 炼乳
+
+liver 肝脏
+
+bunch of monsters 一群怪兽
