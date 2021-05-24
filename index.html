@@ -32,13 +32,13 @@ layout: default
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">上一页</a>
   {% else %}
-    <span class="previous">PREV</span>
+    <span class="previous">上一页</span>
   {% endif %}
   <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">下一页</a>
   {% else %}
-    <span class="next ">NEXT</span>
+    <span class="next ">下一页</span>
   {% endif %}
 </div>
 
