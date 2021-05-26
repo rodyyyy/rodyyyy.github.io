@@ -164,3 +164,24 @@ breathe out 呼出
 
 #### 2021-5-24
 
+on the wall 在墙上
+
+When you steal from the rich it's criminal. But stealing from the poor, that's Capitalism.资本主义
+
+once upon a time 很久以前
+
+blackmail 敲诈，勒索
+
+worker ant 公蚁
+
+it's going to be better 一切会好的
+
+be composed of 由...组成
+
+carbon dioxide is warming the earth 二氧化碳使全球变暖
+
+robot 机器人
+
+say goodbye with words 口头上说再见
+
+wonderful place for raising horses 养马的好地方
