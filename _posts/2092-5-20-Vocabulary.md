@@ -185,3 +185,71 @@ robot 机器人
 say goodbye with words 口头上说再见
 
 wonderful place for raising horses 养马的好地方
+
+#### 2021-5-28
+
+insane 疯了
+
+sense 感觉，感知
+
+antennae 触角
+
+there is an endless road to re-discover 重新发现漫长的路
+
+irritating 气人
+
+have been friends with humans 成为人类的朋友
+
+in the end 到最后
+
+dread 害怕
+
+worship 崇拜
+
+fabulous 极好的
+
+#### 2021-5-29
+
+teaspoon 一勺子
+
+creature 生物
+
+guidance 指导
+
+plenty of 很多
+
+heal 治愈
+
+Athens 雅典
+
+decision 决定
+
+i am a man of my word 说话算数
+
+take aim 瞄准目标
+
+calf 幼崽
+
+playful 贪玩的
+
+nuts 坚果
+
+leafy greens  绿色蔬菜   带叶子的
+
+berries 莓果
+
+cereal grain 谷物的 谷物
+
+instrument 乐器
+
+robophobic 机器人恐惧症
+
+alphabet 字母
+
+ice age 冰川时代
+
+buckle 扣上
+
+master 主人
+
+terminal 航站楼、终端、终点
