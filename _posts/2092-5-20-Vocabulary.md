@@ -253,3 +253,56 @@ buckle 扣上
 master 主人
 
 terminal 航站楼、终端、终点
+
+#### 2021-5-31
+
+leave her alone 别管她
+
+donkey 驴子
+
+saddest 最悲伤的
+
+trustworthy 靠谱
+
+carrots 胡萝卜
+
+once upon a time 很久以前
+
+doorbell 门铃
+
+i have been loving you so long 爱你如此之久
+
+fate 命运
+
+common 通常的
+
+sign 迹象，签字，符号
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
