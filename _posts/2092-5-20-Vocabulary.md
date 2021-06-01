@@ -278,7 +278,37 @@ common 通常的
 
 sign 迹象，签字，符号
 
+#### 2021-6-1
 
+love without awareness 没有觉悟的爱
+
+i have never seen a human up close  我从未如此近地看到过人类
+
+steal 偷
+
+what had just been said of me is true 刚刚说到的关于我的都是真的
+
+teapot 茶壶
+
+water's ready 水烧开
+
+do you still believe in one another 你们还相信彼此么
+
+it's a wonderful place for raising horses 养马的好地方
+
+probably 可能地
+
+have a look at your face 看看你的脸
+
+museum 博物馆
+
+vegan dishes 素菜
+
+crush 用力压，碾压，摧毁
+
+i have no friends at school 我在学校没有朋友
+
+whether you believe it or not 不论你信不信
 
 
 
