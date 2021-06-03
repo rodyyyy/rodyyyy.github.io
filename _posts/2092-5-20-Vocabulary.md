@@ -310,17 +310,39 @@ i have no friends at school 我在学校没有朋友
 
 whether you believe it or not 不论你信不信
 
+#### 2021-6-4
 
+keep out of reach of children 远离儿童
 
+i think we'd（would） make a good team 我觉得我们会成为很好的搭档 
 
+shitty 差的、劣等的
 
+stain 弄脏、污点、斑点 
 
+astronomy 天文学
 
+the first man in space 踏入太空第一人
 
+tusks 象牙
 
+the Taj Mahal 泰姬陵
 
+i know what it's like to feel different 我知道与众不同是什么感觉
 
+survive 活下来
 
+for the first time in my life 人生中第一次
+
+gardener 园丁
+
+what's the most irritating thing my parents say to me? 父母说过最气人的话
+
+amongst 是 among的替代属于，在...中
+
+i've lived amongst nature my whole life 我几乎一辈子都过着自然的生活
+
+the Republic 共和国
 
 
 
