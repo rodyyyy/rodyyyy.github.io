@@ -90,7 +90,7 @@ trust worthy 靠谱
 
 ogre 怪物、食人魔
 
-rainforest 玉林
+rainforest 雨林
 
 puppet 木偶
 
@@ -146,7 +146,7 @@ bunch of monsters 一群怪兽
 
 freak 怪物
 
-did you get what i send you for? 你拿到了我寄给你的东西了么？
+did you get what i send you for?  你拿到了我寄给你的东西了么？
 
 come in third 拿了第三名
 
@@ -342,7 +342,15 @@ amongst 是 among的替代属于，在...中
 
 i've lived amongst nature my whole life 我几乎一辈子都过着自然的生活
 
-the Republic 共和国
+nine out of ten people would rather be surfing the web rather than reading a book. 十分之九的人宁愿上网也不愿意聊天
+
+#### 2021-6-5 
+
+brainy 高智商的
+
+hole 洞
+
+agreeable 和蔼的
 
 
 
